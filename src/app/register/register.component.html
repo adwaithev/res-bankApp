@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class=" row">
+
+        <div class="col-lg-4 col-md-4 col-12 box">
+            <h2 style="color: white;text-align: center;line-height: 60px;">You are<br>few steps <br>away
+                from<br>creating your<br>account</h2>
+            <p style="font-size:small; margin-bottom:10px;color: white;margin-top: 120px;">Already have an account
+                ?<a href="" class="lin">log in</a></p>
+        </div>
+
+
+        
+        <div class="col-lg-8 col-md-4 col-12 inpt-bg">
+            <p>
+            <h2> Register here</h2>
+
+
+
+            <form [formGroup]="registerForm" (ngSubmit)="register()" >
+
+                
+                <input type="text" name="" id="uname" class="form-control" name="uname" formControlName="uname"  placeholder="User name"><br>
+              <div *ngIf="(this.registerForm.get('uname')?.touched||this.registerForm.get('uname')?.dirty)&&this.registerForm.get('uname')?.errors" class="errors">Invalid user</div>
+              
+                <input type="text" id="accnotext" class="form-control" name="acno" formControlName="acno" placeholder="Account number"><br>
+                <div *ngIf="(this.registerForm.get('acno')?.touched||this.registerForm.get('acno')?.dirty)&&this.registerForm.get('acno')?.errors" class="errors">Invalid account number</div>
+                
+                <input type="text" id="pwdtext" class="form-control" name="pswd" formControlName="pswd" placeholder="Password"><br>
+                <div *ngIf="(this.registerForm.get('pswd')?.touched||this.registerForm.get('pswd')?.dirty)&&this.registerForm.get('pswd')?.errors" class="errors">Invalid Password</div>
+                <button type="submit" >Register</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>

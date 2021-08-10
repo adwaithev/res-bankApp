@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+}
+
+.box {
+    background-color: #001cf9 !important;
+
+    justify-content: space-evenly;
+    width: 360px;
+    height: 550px;
+    padding: 5%;
+    color: white;
+    text-align: center;
+
+}
+
+
+.inpt-bg {
+    background-color: #E1E7ED;
+    justify-content: space-evenly;
+
+    padding-left: 6%;
+    height: 550px;
+    padding-right: 5%;
+    width: 590px;
+    padding-top: 3%;
+    padding-bottom: 50px;
+
+
+
+}
+
+label {
+    margin-bottom: 10px;
+
+}
+
+.form-control {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10%;
+}
+
+.container {
+    margin-left: 19%;
+    margin-top: 5%;
+}
+.lin{
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
+}
+.errors{
+    color: red;
+   
+}

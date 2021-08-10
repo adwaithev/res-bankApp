@@ -1,0 +1,21 @@
+h4{
+    margin-left: 530px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-top: 50px;
+    
+}
+table{
+    width: 800px;
+    margin-left: 260px;
+}
+td{
+    padding-left: 160px;
+}
+th{
+    padding-left: 160px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

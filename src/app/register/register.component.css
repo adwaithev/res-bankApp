@@ -1,0 +1,45 @@
+.container {
+    margin-left: 19%;
+    margin-top: 5%;
+}
+
+.box {
+    width: 350px;
+    background-color: #001CF9;
+    justify-content: space-evenly;
+    padding: 5%;
+    height: 550px;
+    padding-bottom: 2%;
+}
+
+.form-control {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+   margin-top: 5%;
+}
+
+.inpt-bg {
+    background-color: #E1E7ED;
+    justify-content: space-evenly;
+    width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    height: 550px;
+   
+}
+
+label {
+    margin-bottom: 5px;
+
+}
+.lin{
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
+}
+.errors{
+    color: red;
+}

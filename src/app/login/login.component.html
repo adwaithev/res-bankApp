@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row ">
+        <div class="col-lg-4 col-md-6 col-12 inpt-bg">
+            <p>
+            <h2>login</h2>
+            <!--<h5 style="margin-bottom: 40px;">{{aim}}</h5>-->
+
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+                <input type="text" name="acno" id="accnotext" class="form-control" formControlName="acno"
+                    placeholder="Account Number"><br>
+                <div *ngIf="(this.loginForm.get('acno')?.touched||this.loginForm.get('acno')?.dirty)&&this.loginForm.get('acno')?.errors"
+                    class="errors">Invalid Account Number</div>
+                <input type="text" name="pswd" id="pswd" class="form-control" formControlName="pswd"
+                    placeholder=" Enter password"><br>
+                <div *ngIf="(this.loginForm.get('pswd')?.touched||this.loginForm.get('pswd')?.dirty)&&this.loginForm.get('pswd')?.errors"
+                    class="errors">Invalid password</div>
+
+
+
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+
+        </div>
+        <div class="col-lg-8 col-md-6 col-12 box">
+
+
+            <h3 style="margin-bottom: 40px;">Welcome back</h3>
+            <h1 style="margin-bottom: 50px;">Stay connected to<br> your accounts<br> 24x7</h1>
+            <a class="lin" routerLink='register'>sign up</a>
+
+
+        </div>
+    </div>
+
+</div>
